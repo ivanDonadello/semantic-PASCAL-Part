@@ -5,6 +5,30 @@ This is a curated semantic version of the PASCAL-Part dataset for part-based obj
 
 We also provide a semantics to the labels of objects by aligning them with a corresponding synset of WordNet and a corresponding concept of Yago if possible.
 
+## Structure of the semantic PASCAL-Part Dataset
+Download the data [here](https://drive.google.com/file/d/1m1YHlisEFvlQa52zdab6Q7qqhHQP9Vtl/view?usp=sharing) and unzip the semantic PASCAL-Part Dataset:
+
+- `semanticPascalPart`: it contains the refined images and annotations (e.g., small specific parts are merged into bigger parts) of the PASCAL-Part dataset in Pascal-voc style.
+    - `Annotations_set`: the test set annotations in `.xml` format. For further information See pascalvoc format at devkit http://host.robots.ox.ac.uk/pascal/VOC/index.html.
+    - `Annotations_trainval`: the train and validation set annotations in `.xml` format. For further information See pascalvoc format at devkit http://host.robots.ox.ac.uk/pascal/VOC/index.html.
+    - `JPEGImages_test`: the test set images in `.jpg` format.
+    - `JPEGImages_trainval`: the train and validation set images in `.jpg` format.
+    - `test.txt`: the 2416 image filenames in the test set.
+    - `trainval.txt`: the 7687 image filenames in the train and validation set.
+
+## The PASCAL-Part Ontology
+We provide an OWL ontology that formalizes through logical axioms the part-of relation between whole objects (22 classes) and parts (39 classes). The 85 axiomns are in Description Logic and have the following form: <em>Every potted plant has exaclty one plant and exactly one pot.</em> We provide two ontologies: with and without cardinality constraints in order to allow the users to play or not with them. The WordNet alignment is in the ontologies as annotations. We further provide a `csv` file with the WordNet and Yago alignments.
+
+The ontologies can be browsed with many Semantic Web tools such as:
+
+- [Protégé](https://protege.stanford.edu/): a graphical tool for ongology modelling;
+- [OWLAPI](http://owlapi.sourceforge.net/): Java API for manipulating OWL ontologies;
+- [rdflib](https://rdflib.readthedocs.io/en/stable/): Python API for working wwith the RDF format.
+- RDF stores: databases for storing and semantically retrieve RDF triples. See [here](https://www.w3.org/wiki/LargeTripleStores) for some examples.
+
+## Provided code
+We provide the code for parsing the dataset. 
+
 ## Citing semantic PASCAL-Part
 
 If you use semantic PASCAL-Part in your research, please use the following BibTeX entry.
@@ -22,25 +46,3 @@ If you use semantic PASCAL-Part in your research, please use the following BibTe
   year      = {2016}
 }
 ```
-
-## The PASCAL-Part Ontology
-The ontologies can be browsed with many Semantic Web tools such as:
-
-- [Protégé](https://protege.stanford.edu/): a graphical tool for ongology modelling;
-- [OWLAPI](http://owlapi.sourceforge.net/): Java API for manipulating OWL ontologies;
-- [rdflib](https://rdflib.readthedocs.io/en/stable/): Python API for working wwith the RDF format.
-- RDF stores: databases for storing and semantically retrieve RDF triples. See [here](https://www.w3.org/wiki/LargeTripleStores) for some examples.
-
-## Structure of the semantic PASCAL-Part Dataset folder
-Download the data [here](https://drive.google.com/file/d/1m1YHlisEFvlQa52zdab6Q7qqhHQP9Vtl/view?usp=sharing) and unzip the semantic PASCAL-Part Dataset:
-
-- `semanticPascalPart`: it contains the refined images and annotations (e.g., small specific parts are merged into bigger parts) of the PASCAL-Part dataset in Pascal-voc style.
-    - `Annotations_set`: the test set annotations in `.xml` format. For further information See pascalvoc format at devkit http://host.robots.ox.ac.uk/pascal/VOC/index.html.
-    - `Annotations_trainval`: the train and validation set annotations in `.xml` format. For further information See pascalvoc format at devkit http://host.robots.ox.ac.uk/pascal/VOC/index.html.
-    - `JPEGImages_test`: the test set images in `.jpg` format.
-    - `JPEGImages_trainval`: the train and validation set images in `.jpg` format.
-    - `test.txt`: the 2416 image filenames in the test set.
-    - `trainval.txt`: the 7687 image filenames in the train and validation set.
-
-## Provided code
-We provide the code for parsing the dataset. 
