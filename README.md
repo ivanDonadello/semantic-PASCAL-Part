@@ -17,7 +17,7 @@ Download the data [here](https://drive.google.com/file/d/1m1YHlisEFvlQa52zdab6Q7
     - `trainval.txt`: the 7687 image filenames in the train and validation set.
 
 ## The PASCAL-Part Ontology
-We provide an OWL ontology that formalizes through logical axioms the part-of relation between whole objects (22 classes) and parts (39 classes). The 85 axiomns are in Description Logic and have the following form: <em>Every potted plant has exaclty one plant and exactly one pot.</em> We provide two ontologies: with and without cardinality constraints in order to allow the users to play or not with them. The WordNet alignment is in the ontologies as annotations. We further provide a `csv` file with the WordNet and Yago alignments.
+The PASCAL-Part OWL ontology formalizes through logical axioms the part-of relation between whole objects (22 classes) and their parts (39 classes). There existing 85 logical axiomns are in Description Logic and have the following form: <em>Every potted plant has exaclty one plant and exactly one pot.</em> We provide two versions of the ontologies: with and without cardinality constraints in order to allow the users to experiment with or without them. The WordNet alignment is in the ontologies as annotations. We further provide the `WordNet_Yago_alignment.csv` file with the WordNet and Yago alignments.
 
 The ontologies can be browsed with many Semantic Web tools such as:
 
