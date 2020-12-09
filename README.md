@@ -1,37 +1,28 @@
 # semantic-PASCAL-Part
-This is a curated semantic version of the PASCAL-Part dataset for part-based object detection. Objects are concepts in the provided ontology and are aligned with the synsets of WordNet.
+This is a curated semantic version of the PASCAL-Part dataset for part-based object detection. Objects are concepts in the provided ontology and are aligned with the synsets of [WordNet](https://wordnet.princeton.edu/) and with the concepts of [Yago](https://yago-knowledge.org/) where possible.
 
+[PASCAL-Part dataset](https://www.cs.stanford.edu/~roozbeh/pascal-parts/pascal-parts.html) contains objects labelled with classes of animals, vehicles, indoor objects and their parts. However, labels for parts are very specific, e.g., “left lower leg” and “right hand” and in many applications of semantic image interpretation such a fine-grained distinction is not necessary. Therefore, we merged the segments of the images that refers to the same part in a unique segment, e.g. two segments labelled with “left lower leg” and “left front leg” of the same leg have been merged in a segment labelled with “leg”. Then, we converted the segments into bounding boxes.
 
-
-
-One such a dataset is the PASCAL-P ART dataset
-[5]. Image segments of this dataset are labelled with
-classes of animals, vehicles, indoor objects and their
-parts. However, labels for parts in PASCAL-P ART are
-very specific, e.g., “left lower leg” and “right hand”.
-Since we are not interested in such a fine-grained dis-
-tinction, we merged the segments of the images that
-refers to the same part in a unique segment, e.g. two
-segments labelled with “left lower leg” and “left front
-leg” of the same leg have been merged in a seg-
-ment labelled with “leg”.
+We also provide a semantics to the labels of objects by aligning them with a corresponding synset of WordNet and a corresponding concept of Yago if possible.
 
 ## The PASCAL-Part Ontology
+The ontologies can be browsed with many Semantic Web tools such as:
+
+- [Protégé](https://protege.stanford.edu/): a graphical tool for ongology modelling;
+- [OWLAPI](http://owlapi.sourceforge.net/): Java API for manipulating OWL ontologies;
+- [rdflib](https://rdflib.readthedocs.io/en/stable/): Python API for working wwith the RDF format.
+- RDF stores: databases for storing and semantically retrieve RDF triples. See [here](https://www.w3.org/wiki/LargeTripleStores) for some examples.
 
 ## Structure of the semantic PASCAL-Part Dataset folder
-Download the data here and unzip the semantic PASCAL-Part Dataset:
+Download the data [here]() and unzip the semantic PASCAL-Part Dataset:
 
 - `semanticPascalPart`: it contains the refined images and annotations (e.g., small specific parts are merged into bigger parts) of the PASCAL-Part dataset in Pascal-voc style.
     - `Annotations_set`: the test set annotations in `.xml` format. For further information See pascalvoc format at devkit http://host.robots.ox.ac.uk/pascal/VOC/index.html.
     - `Annotations_trainval`: the train and validation set annotations in `.xml` format. For further information See pascalvoc format at devkit http://host.robots.ox.ac.uk/pascal/VOC/index.html.
     - `JPEGImages_test`: the test set images in `.jpg` format.
     - `JPEGImages_trainval`: the train and validation set images in `.jpg` format.
-    - `test.txt`: the image filenames in the test set.
-    - `trainval.txt`: the image filenames in the train and validation set.
+    - `test.txt`: the 2416 image filenames in the test set.
+    - `trainval.txt`: the 7687 image filenames in the train and validation set.
 
 ## Provided code
-We provide the code for parsing the dataset. The ontologies can be browsed with many Semantic Web tools such as:
-- Protege: a graphical tool for ongology modelling;
-- OWLAPI: Java API for OWL;
-- rdflib: Python API for rdf
-- rdf store:
+We provide the code for parsing the dataset. 
