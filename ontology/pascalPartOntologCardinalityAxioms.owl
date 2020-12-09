@@ -1,0 +1,1041 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#"
+     xml:base="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology"
+     xmlns:pascalPartOntology="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#wordnetId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#wordnetId"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#isPartOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Aeroplane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Aeroplane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Vehicle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Artifact_Wing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Engine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Wheel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Body"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Stern"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <wordnetId>02694015</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Animal_Wing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Animal_Wing">
+        <wordnetId>02154277</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Animals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Animals">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Leg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Head"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Neck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Torso"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Eye"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <wordnetId>00015568</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Arm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Arm">
+        <wordnetId>05571403</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Artifact_Wing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Artifact_Wing">
+        <wordnetId>04600068</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Beak -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Beak">
+        <wordnetId>01760949</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Bicycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Bicycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Vehicle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Headlight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Chain_Wheel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Handlebar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Saddle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Wheel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <wordnetId>02837983</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Bird -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Bird">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Animals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Beak"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Tail"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Animal_Wing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <wordnetId>01505702</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Boat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Boat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Vehicle"/>
+        <wordnetId>02861626</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Body -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Body">
+        <wordnetId>02865226</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Bodywork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Bodywork">
+        <wordnetId>02866766</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Bottle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Bottle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Body"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Cap"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <wordnetId>02879899</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Vehicle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Door"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Headlight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Mirror"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Wheel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Window"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Bodywork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#License_plate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <wordnetId>02927500</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Cap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Cap">
+        <wordnetId>02958374</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Car -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Car">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Vehicle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Door"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Headlight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Window"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Bodywork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#License_plate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Mirror"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Wheel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <wordnetId>02961779</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Cat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Cat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Animals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Tail"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Ear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <wordnetId>02124272}</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Chain_Wheel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Chain_Wheel">
+        <wordnetId>02838617</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Chair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Chair">
+        <wordnetId>03005231</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Coach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Coach">
+        <wordnetId>03901563</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Cow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Cow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Animals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Muzzle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Tail"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Ear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Horn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <wordnetId>01890428</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Diningtable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Diningtable">
+        <wordnetId>03205892</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Dog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Dog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Animals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Muzzle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Nose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Tail"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Ear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <wordnetId>02086723</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Door -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Door">
+        <wordnetId>02967273</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Ear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Ear">
+        <wordnetId>05328447</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Ebrow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Ebrow">
+        <wordnetId>05321060</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Engine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Engine">
+        <wordnetId>03292644</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Eye -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Eye">
+        <wordnetId>05318579</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Foot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Foot">
+        <wordnetId>05570899</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Hair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Hair">
+        <wordnetId>05262259</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Hand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Hand">
+        <wordnetId>05572223</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Handlebar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Handlebar">
+        <wordnetId>03492173</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Head -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Head">
+        <wordnetId>05546258</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Headlight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Headlight">
+        <wordnetId>03509141</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Hoof -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Hoof">
+        <wordnetId>02156611</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Horn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Horn">
+        <wordnetId>01328058</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Horse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Horse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Animals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Muzzle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Tail"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Ear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Hoof"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <wordnetId>02377103</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Leg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Leg">
+        <wordnetId>05569140</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#License_plate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#License_plate">
+        <wordnetId>03666506</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Locomotive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Locomotive">
+        <wordnetId>03690149</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Mirror -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Mirror">
+        <wordnetId>02969235</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Motorbike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Motorbike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Vehicle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Headlight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Saddle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Handlebar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Wheel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <wordnetId>03775257</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Mouth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Mouth">
+        <wordnetId>05309407</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Muzzle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Muzzle">
+        <wordnetId>02455095</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Neck -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Neck">
+        <wordnetId>05554173</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Nose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Nose">
+        <wordnetId>05605902</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Animals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Hair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Mouth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Nose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Arm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Ear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Ebrow"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Foot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Hand"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <wordnetId>00007846</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Plant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Plant">
+        <wordnetId>00017402</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Pot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Pot">
+        <wordnetId>03997420</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Pottedplant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Pottedplant">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Plant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Pot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <wordnetId>00017402</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Saddle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Saddle">
+        <wordnetId>02839120</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Screen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Screen">
+        <wordnetId>04159676</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Sheep -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Sheep">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Animals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Muzzle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Tail"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Ear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Horn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <wordnetId>02414351</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Sofa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Sofa">
+        <wordnetId>04263630</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Stern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Stern">
+        <wordnetId>04323784</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Tail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Tail">
+        <wordnetId>02160209</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Torso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Torso">
+        <wordnetId>05557463</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Vehicle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Coach"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Headlight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Locomotive"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <wordnetId>04475240</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Tvmonitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Tvmonitor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#hasParts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Screen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <wordnetId>04412897</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Vehicle">
+        <wordnetId>04531608</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Wheel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Wheel">
+        <wordnetId>04582285</wordnetId>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Window -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donadello/ontologies/2015/11/pascalPartOntology#Window">
+        <wordnetId>02977678</wordnetId>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
