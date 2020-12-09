@@ -32,7 +32,7 @@ The ontologies can be browsed with many Semantic Web tools such as:
 - RDF stores: databases for storing and semantically retrieve RDF triples. See [here](https://www.w3.org/wiki/LargeTripleStores) for some examples.
 
 ## Structure of the semantic PASCAL-Part Dataset folder
-Download the data [here]() and unzip the semantic PASCAL-Part Dataset:
+Download the data [here](https://drive.google.com/file/d/1m1YHlisEFvlQa52zdab6Q7qqhHQP9Vtl/view?usp=sharing) and unzip the semantic PASCAL-Part Dataset:
 
 - `semanticPascalPart`: it contains the refined images and annotations (e.g., small specific parts are merged into bigger parts) of the PASCAL-Part dataset in Pascal-voc style.
     - `Annotations_set`: the test set annotations in `.xml` format. For further information See pascalvoc format at devkit http://host.robots.ox.ac.uk/pascal/VOC/index.html.
