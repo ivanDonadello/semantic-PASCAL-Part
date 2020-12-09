@@ -17,9 +17,13 @@ leg” of the same leg have been merged in a seg-
 ment labelled with “leg”.
 
 
-## Structure of LTN folder
+## Structure of the semanticPascalPartDataset foldr
+Download from here and unzip the semantic PASCAL-Part Dataset.
 
-- `pascalpart_dataset`: it contains the refined images and annotations (e.g., small specific parts are merged into bigger parts) of pascalpart dataset in pascalvoc style. This folder is necessary if you want to train Fast-RCNN (https://github.com/rbgirshick/fast-rcnn) on this dataset for computing the grounding/features vector of each bounding box.
-    - `Annotations`: the annotations in `.xml` format. To see bounding boxes in the images use the pascalvoc devkit http://host.robots.ox.ac.uk/pascal/VOC/index.html.
-    - `ImageSets`: the split of the dataset into train and test set according to every unary predicate/class. For further information See pascalvoc format at devkit http://host.robots.ox.ac.uk/pascal/VOC/index.html.
-    - `JPEGImages`: the images in `.jpg` format.
+- `semanticPascalPart`: it contains the refined images and annotations (e.g., small specific parts are merged into bigger parts) of the PASCAL-Part dataset in Pascal-voc style.
+    - `Annotations_set`: the test set annotations in `.xml` format. For further information See pascalvoc format at devkit http://host.robots.ox.ac.uk/pascal/VOC/index.html.
+    - `Annotations_trainval`: the train and validation set annotations in `.xml` format. For further information See pascalvoc format at devkit http://host.robots.ox.ac.uk/pascal/VOC/index.html.
+    - `JPEGImages_test`: the test set images in `.jpg` format.
+    - `JPEGImages_trainval`: the train and validation set images in `.jpg` format.
+    - `test.txt`:
+    - `trainval.txt`:
