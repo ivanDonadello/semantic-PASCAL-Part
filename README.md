@@ -5,6 +5,24 @@ This is a curated semantic version of the PASCAL-Part dataset for part-based obj
 
 We also provide a semantics to the labels of objects by aligning them with a corresponding synset of WordNet and a corresponding concept of Yago if possible.
 
+## Citing semantic PASCAL-Part
+
+If you use semantic PASCAL-Part in your research, please use the following BibTeX entry.
+
+```
+@article{DBLP:journals/ia/DonadelloS16,
+  author    = {Ivan Donadello and
+               Luciano Serafini},
+  title     = {Integration of numeric and symbolic information for semantic image
+               interpretation},
+  journal   = {Intelligenza Artificiale},
+  volume    = {10},
+  number    = {1},
+  pages     = {33--47},
+  year      = {2016}
+}
+```
+
 ## The PASCAL-Part Ontology
 The ontologies can be browsed with many Semantic Web tools such as:
 
