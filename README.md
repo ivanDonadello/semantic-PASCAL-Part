@@ -17,6 +17,7 @@ Download the data [here](https://drive.google.com/file/d/1m1YHlisEFvlQa52zdab6Q7
     - `trainval.txt`: the 7687 image filenames in the train and validation set.
 
 ## The PASCAL-Part Ontology
+<div style="text-align: justify"> 
 The PASCAL-Part OWL ontology formalizes through logical axioms the part-of relation between whole objects (22 classes) and their parts (39 classes). There existing 85 logical axiomns are in Description Logic and have the following form: <em>Every potted plant has exaclty one plant and exactly one pot.</em> We provide two versions of the ontologies: with and without cardinality constraints in order to allow the users to experiment with or without them. The WordNet alignment is in the ontologies as annotations. We further provide the `WordNet_Yago_alignment.csv` file with the WordNet and Yago alignments.
 
 The ontologies can be browsed with many Semantic Web tools such as:
@@ -25,7 +26,7 @@ The ontologies can be browsed with many Semantic Web tools such as:
 - [OWLAPI](http://owlapi.sourceforge.net/): Java API for manipulating OWL ontologies;
 - [rdflib](https://rdflib.readthedocs.io/en/stable/): Python API for working wwith the RDF format.
 - RDF stores: databases for storing and semantically retrieve RDF triples. See [here](https://www.w3.org/wiki/LargeTripleStores) for some examples.
-
+</div>
 ## Provided code
 We provide the code for parsing the dataset. 
 
