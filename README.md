@@ -114,5 +114,5 @@ If you use semantic PASCAL-Part in your research, please use the following BibTe
 - Serafini, Luciano, Ivan Donadello, and Artur d'Avila Garcez. "Learning and reasoning in logic tensor networks: theory and application to semantic image interpretation." <em>Proceedings of the Symposium on Applied Computing. 2017.</em>
 - Donadello, Ivan. <em>Semantic image interpretation-integration of numerical data and logical knowledge for cognitive vision.</em> Diss. University of Trento, 2018.
 - Donadello, Ivan, and Luciano Serafini. "Mixing low-level and semantic features for image interpretation." <em>European Conference on Computer Vision.</em> Springer, Cham, 2014.
-- Donadello, Ivan, and Luciano Serafini. "Integration of numeric and symbolic information for semantic image interpretation." <em>Intelligenza Artificiale<em/> 10.1 (2016): 33-47.
+- Donadello, Ivan, and Luciano Serafini. "Integration of numeric and symbolic information for semantic image interpretation." <em>Intelligenza Artificiale</em> 10.1 (2016): 33-47.
 - Donadello, Ivan. "Ontology Based Semantic Image Interpretation." <em>the 14th Conference of the Italian Association for Artificial Intelligence (AI* IA 2015).</em>
