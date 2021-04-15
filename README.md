@@ -31,8 +31,34 @@ The ontology can be browsed with many Semantic Web tools such as:
 - [rdflib](https://rdflib.readthedocs.io/en/stable/): Python API for working with the RDF format.
 - RDF stores: databases for storing and semantically retrieve RDF triples. See [here](https://www.w3.org/wiki/LargeTripleStores) for some examples.
 
+
 ## Provided code
-We provide the code for parsing the dataset. 
+We provide some Python 3 functions for parsing the dataset. Before loading the dataset create an empty annotation object with:
+```python
+ann = PASCALPArt_annotations()
+```
+Then, you need to load one of the test or trainval set with:
+```python
+ann.load_data(split="trainval")
+```
+You can browse the annotation object with dedicated functions:
+- `get_objects(filename)` : given a `filename` of an image, it returns a dictionary containing the objects in the image.
+- `get_BB(filename, obj_id)` : given a `filename` of an image, it returns the bounding box coordinates of `obj_id`.
+- `get_obj_class(filename, obj_id)` : given a `filename` of an image, it returns the ontology string class of `obj_id`.
+- `get_isPartOf_id(filename, obj_id)` : given a `filename` of an image, it returns the id the whole object of `obj_id`.
+- `get_whole_ids(filename, obj_id)` : given a `filename` of an image, it returns the list if ids of the part objects of `obj_id`.
+
+Last, you convert the annotation object into an RDF ontology:
+```python
+ann_rdf = ann.toRDF("trainval")
+```
+The function `toRDF` is built by using the previous browsing functions. It is possible to create a whole RDF file with both trainval and test set by instantiating the annotation object only one time:
+```python
+ann = PASCALPArt_annotations()
+ann.load_data(split="trainval")
+ann.load_data(split="test")
+ann_rdf = ann.toRDF()
+```
 
 ## Citing semantic PASCAL-Part
 
