@@ -41,8 +41,40 @@ Then, you need to load one of the test or trainval set with:
 ```python
 ann.load_data(split="trainval")
 ```
+Annotations are stored as a Python dictionary, here an example:
+```python
+{
+      "00001": {
+        "1": {
+          "class": "Person",
+          "x_1": 1,
+          "y_1": 1,
+          "x_2": 123,
+          "y_2": 124,
+          "isPartOf": ""
+          "hasParts": "2,3"
+        },
+        "2": {
+          "class": "Leg",
+          "x_1": 23,
+          "y_1": 23,
+          "x_2": 44,
+          "y_2": 44,
+          "isPartOf": "1"
+        },
+         "3": {
+         "class": "Body",
+         "x_1": 28,
+         "y_1": 321,
+         "x_2": 312,
+         "y_2": 932,
+         "isPartOf": "1"
+        }
+     }
+}      
+```
 You can browse the annotation object with dedicated functions:
-- ```python get_objects(filename)```: given a `filename` of an image, it returns a dictionary containing the objects in the image.
+- `get_objects(filename)`: given a `filename` of an image, it returns a dictionary containing the objects in the image.
 - `get_BB(filename, obj_id)` : given a `filename` of an image, it returns the bounding box coordinates of `obj_id`.
 - `get_obj_class(filename, obj_id)` : given a `filename` of an image, it returns the ontology string class of `obj_id`.
 - `get_isPartOf_id(filename, obj_id)` : given a `filename` of an image, it returns the id the whole object of `obj_id`.
