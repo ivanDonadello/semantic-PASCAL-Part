@@ -93,7 +93,6 @@ ann_rdf = ann.toRDF()
 ```
 
 ## Citing semantic PASCAL-Part
-
 If you use semantic PASCAL-Part in your research, please use the following BibTeX entry
 
 ```
@@ -109,3 +108,11 @@ If you use semantic PASCAL-Part in your research, please use the following BibTe
   year      = {2016}
 }
 ```
+
+## Papers using semantic PASCAL-Part
+- Donadello, Ivan, Luciano Serafini, and Artur D'Avila Garcez. "Logic tensor networks for semantic image interpretation." <em>Proceedings of the 26th International Joint Conference on Artificial Intelligence. 2017.</em>
+- Serafini, Luciano, Ivan Donadello, and Artur d'Avila Garcez. "Learning and reasoning in logic tensor networks: theory and application to semantic image interpretation." <em>Proceedings of the Symposium on Applied Computing. 2017.</em>
+- Donadello, Ivan. <em>Semantic image interpretation-integration of numerical data and logical knowledge for cognitive vision.</em> Diss. University of Trento, 2018.
+- Donadello, Ivan, and Luciano Serafini. "Mixing low-level and semantic features for image interpretation." <em>European Conference on Computer Vision.</em> Springer, Cham, 2014.
+- Donadello, Ivan, and Luciano Serafini. "Integration of numeric and symbolic information for semantic image interpretation." <em>Intelligenza Artificiale<em/> 10.1 (2016): 33-47.
+- Donadello, Ivan. "Ontology Based Semantic Image Interpretation." <em>the 14th Conference of the Italian Association for Artificial Intelligence (AI* IA 2015).</em>
