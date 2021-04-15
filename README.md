@@ -42,7 +42,7 @@ Then, you need to load one of the test or trainval set with:
 ann.load_data(split="trainval")
 ```
 You can browse the annotation object with dedicated functions:
-- `get_objects(filename)` : given a `filename` of an image, it returns a dictionary containing the objects in the image.
+- ```python get_objects(filename)```: given a `filename` of an image, it returns a dictionary containing the objects in the image.
 - `get_BB(filename, obj_id)` : given a `filename` of an image, it returns the bounding box coordinates of `obj_id`.
 - `get_obj_class(filename, obj_id)` : given a `filename` of an image, it returns the ontology string class of `obj_id`.
 - `get_isPartOf_id(filename, obj_id)` : given a `filename` of an image, it returns the id the whole object of `obj_id`.
