@@ -1,9 +1,11 @@
 # semantic-PASCAL-Part
-This is a curated semantic version of the PASCAL-Part dataset for part-based object detection. Objects are concepts in the provided ontology and are aligned with the synsets of [WordNet](https://wordnet.princeton.edu/) and with the concepts of [Yago](https://yago-knowledge.org/) where possible.
+This is a curated semantic version of the PASCAL-Part dataset for part-based object detection. The object in the images are provided with a semantics through the alignement with the concetps in
+- the provided OWL ontology; 
+- the [WordNet](https://wordnet.princeton.edu/) database through its synstes;
+- the [Yago](https://yago-knowledge.org/) ontology.
+The provided Python 3 code (see below the APIs) converts the dataset in RDF format for easily processing with Semantic Web technologies.
 
 The original [PASCAL-Part dataset](https://www.cs.stanford.edu/~roozbeh/pascal-parts/pascal-parts.html) contains objects labelled with classes of animals, vehicles, indoor objects and their parts. However, labels for parts are very specific, e.g., “left lower leg” and “right hand” and in many applications of semantic image interpretation such a fine-grained distinction is not necessary. Therefore, we merged the segments of the images that refer to the same part in a unique segment, e.g. two segments labelled with “left lower leg” and “left front leg” of the same leg have been merged in a segment labelled with “leg”. Then, we converted the segments into bounding boxes.
-
-We also provide a semantics to these labels by aligning them with a corresponding synset of WordNet and a corresponding concept of Yago if possible.
 
 ## Structure of the semantic PASCAL-Part Dataset
 Download the data [here](https://drive.google.com/file/d/1m1YHlisEFvlQa52zdab6Q7qqhHQP9Vtl/view?usp=sharing) and unzip the semantic PASCAL-Part Dataset:
