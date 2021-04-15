@@ -41,7 +41,7 @@ Then, you need to load one of the test or trainval set with:
 ```python
 ann.load_data(split="trainval")
 ```
-Annotations are stored as a Python dictionary, here an example:
+Annotations are stored as a Python dictionary containing the file names of the images, the ids of the contained objects, bounding boxes coordinates alog with the class name and the isPartOf/harParts relationships. Here an example:
 ```python
 {
       "00001": {
