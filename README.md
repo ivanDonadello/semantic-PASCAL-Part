@@ -114,6 +114,7 @@ If you use semantic PASCAL-Part in your research, please use the following BibTe
 ```
 
 ## Papers using semantic PASCAL-Part
+- Díaz-Rodríguez, N., Lamas, A., Sanchez, J., Franchi, G., Donadello, I., Tabik, S., ... & Herrera, F. (2022). "EXplainable Neural-Symbolic Learning (X-NeSyL) methodology to fuse deep learning representations with expert knowledge graphs: The MonuMAI cultural heritage use case." <em>Information Fusion, 79, 58-83.</em>
 - Donadello, Ivan, Luciano Serafini, and Artur D'Avila Garcez. "Logic tensor networks for semantic image interpretation." <em>Proceedings of the 26th International Joint Conference on Artificial Intelligence. 2017.</em>
 - Serafini, Luciano, Ivan Donadello, and Artur d'Avila Garcez. "Learning and reasoning in logic tensor networks: theory and application to semantic image interpretation." <em>Proceedings of the Symposium on Applied Computing. 2017.</em>
 - Donadello, Ivan. <em>Semantic image interpretation-integration of numerical data and logical knowledge for cognitive vision.</em> Diss. University of Trento, 2018.
